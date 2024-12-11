@@ -133,6 +133,12 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CurvedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -259,6 +265,18 @@
     <Compile Include="frmManageComics.Designer.cs">
       <DependentUpon>frmManageComics.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptMyAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptMyAnime.Designer.cs">
+      <DependentUpon>frmRptMyAnime.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRptMyComics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +306,10 @@
     <EmbeddedResource Include="CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -345,6 +367,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManageComics.resx">
       <DependentUpon>frmManageComics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptMyAnime.resx">
+      <DependentUpon>frmRptMyAnime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRptMyComics.resx">
       <DependentUpon>frmRptMyComics.cs</DependentUpon>
@@ -469,6 +497,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Arrow_Left-512-ezgif.com-webp-to-png-converter.png" />
     <Content Include="Resources\defaultImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

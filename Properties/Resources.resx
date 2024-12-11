@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="373cdcd30d127d07be2bdcc002936945" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\373cdcd30d127d07be2bdcc002936945.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home-icon-illustration-design-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-icon-illustration-design-vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="340" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\340.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +142,14 @@
   <data name="solo-leveling-sung-jin-woo-blue-wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\solo-leveling-sung-jin-woo-blue-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7580bcd58108f60135aa0942229c2ddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7580bcd58108f60135aa0942229c2ddd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="defa5b9817265f6c251650be59b13fa9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\defa5b9817265f6c251650be59b13fa9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3114883" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3114883.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +157,11 @@
   <data name="349808-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\349808-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Forgot password-cuate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Forgot password-cuate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="users-256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,19 +169,19 @@
   <data name="17367" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\17367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="373cdcd30d127d07be2bdcc002936945" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\373cdcd30d127d07be2bdcc002936945.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plain-grey-background-ydlwqztavi78gl24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plain-grey-background-ydlwqztavi78gl24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home-icon-illustration-design-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-icon-illustration-design-vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="users-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7580bcd58108f60135aa0942229c2ddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7580bcd58108f60135aa0942229c2ddd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Arrow_Left-512-ezgif.com-webp-to-png-converter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arrow_Left-512-ezgif.com-webp-to-png-converter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

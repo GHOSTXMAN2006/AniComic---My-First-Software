@@ -133,6 +133,16 @@ namespace Software.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Arrow_Left_512_ezgif_com_webp_to_png_converter {
+            get {
+                object obj = ResourceManager.GetObject("Arrow_Left-512-ezgif.com-webp-to-png-converter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap defa5b9817265f6c251650be59b13fa9 {
             get {
                 object obj = ResourceManager.GetObject("defa5b9817265f6c251650be59b13fa9", resourceCulture);

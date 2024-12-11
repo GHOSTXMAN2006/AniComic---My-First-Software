@@ -1,6 +1,6 @@
 ﻿namespace Software
 {
-    partial class frmRptMyComics
+    partial class frmRptMyAnime
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // btnSearch
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(9, 54);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(582, 303);
-            this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelWidth = 150;
+            this.btnSearch.Animated = true;
+            this.btnSearch.AutoRoundedCorners = true;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BorderRadius = 12;
+            this.btnSearch.DefaultAutoSize = true;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.IndicateFocus = true;
+            this.btnSearch.Location = new System.Drawing.Point(533, 15);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(66, 27);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseTransparentBackground = true;
             // 
             // txtSearch
             // 
@@ -68,32 +78,21 @@
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(136, 39);
-            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TabIndex = 4;
             // 
-            // btnSearch
+            // crystalReportViewer1
             // 
-            this.btnSearch.Animated = true;
-            this.btnSearch.AutoRoundedCorners = true;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderRadius = 12;
-            this.btnSearch.DefaultAutoSize = true;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.IndicateFocus = true;
-            this.btnSearch.Location = new System.Drawing.Point(533, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(66, 27);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseTransparentBackground = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(9, 54);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(582, 303);
+            this.crystalReportViewer1.TabIndex = 3;
+            this.crystalReportViewer1.ToolPanelWidth = 150;
             // 
-            // frmRptMyComics
+            // frmRptMyAnime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,11 +100,10 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmRptMyComics";
+            this.Name = "frmRptMyAnime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRptMyComics";
-            this.Load += new System.EventHandler(this.frmRptMyComics_Load);
+            this.Text = "frmRptMyAnime";
+            this.Load += new System.EventHandler(this.frmRptMyAnime_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,8 +111,8 @@
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }

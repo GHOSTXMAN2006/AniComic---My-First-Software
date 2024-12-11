@@ -104,7 +104,7 @@ namespace Software
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(58, 223);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(160, 21);
             this.txtUsername.TabIndex = 8;
@@ -135,7 +135,7 @@ namespace Software
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(58, 284);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(160, 21);
             this.txtPassword.TabIndex = 10;
@@ -156,7 +156,7 @@ namespace Software
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DarkCyan;
             this.pictureBox2.Location = new System.Drawing.Point(58, 174);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 3);
             this.pictureBox2.TabIndex = 7;
@@ -166,7 +166,7 @@ namespace Software
             // 
             this.pictureBox1.Image = global::Software.Properties.Resources.Login_rafiki;
             this.pictureBox1.Location = new System.Drawing.Point(305, 87);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(290, 299);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -177,7 +177,7 @@ namespace Software
             // 
             this.picClose.Image = global::Software.Properties.Resources.red_circle_emoji_512x512_8xv6a7vo;
             this.picClose.Location = new System.Drawing.Point(8, 8);
-            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(14, 13);
             this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -189,7 +189,7 @@ namespace Software
             // 
             this.picMinimize.Image = global::Software.Properties.Resources.images__1_;
             this.picMinimize.Location = new System.Drawing.Point(26, 8);
-            this.picMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.Size = new System.Drawing.Size(14, 13);
             this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -201,7 +201,7 @@ namespace Software
             // 
             this.picHeader.Image = global::Software.Properties.Resources.plain_grey_background_ydlwqztavi78gl24;
             this.picHeader.Location = new System.Drawing.Point(0, 0);
-            this.picHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHeader.Margin = new System.Windows.Forms.Padding(2);
             this.picHeader.Name = "picHeader";
             this.picHeader.Size = new System.Drawing.Size(704, 29);
             this.picHeader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +215,7 @@ namespace Software
             this.btnLogin.BorderRadius = 5;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(225, 332);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(56, 22);
             this.btnLogin.TabIndex = 13;
@@ -244,10 +244,11 @@ namespace Software
             this.Controls.Add(this.picMinimize);
             this.Controls.Add(this.picHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

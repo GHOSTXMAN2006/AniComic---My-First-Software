@@ -119,5 +119,12 @@ namespace Software
         {
 
         }
+
+        private void tileReports_Click(object sender, EventArgs e)
+        {
+            frmReports reportsFrm = new frmReports();
+            reportsFrm.Show();
+            reportsFrm.Focus();
+        }
     }
 }
