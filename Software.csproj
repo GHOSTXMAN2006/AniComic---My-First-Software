@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B482195-4004-4AEF-93A1-16D7AC815E0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Software</RootNamespace>
+    <AssemblyName>Software</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.Licensing.6.0.4\lib\net472\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.UI.WinForms.7.2.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.112.1.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=27.2462.3.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.27.2.3\lib\net462\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=27.2462.3.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Shared.Base.27.2.3\lib\net462\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.CodeDom.8.0.0\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurvedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditAnime.Designer.cs">
+      <DependentUpon>frmAddEditAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditAnimeEpisode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditAnimeEpisode.Designer.cs">
+      <DependentUpon>frmAddEditAnimeEpisode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditChapterContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditChapterContent.Designer.cs">
+      <DependentUpon>frmAddEditChapterContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditComic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditComic.Designer.cs">
+      <DependentUpon>frmAddEditComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditComicChapter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditComicChapter.Designer.cs">
+      <DependentUpon>frmAddEditComicChapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminDashboard.Designer.cs">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnimeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimeDetails.Designer.cs">
+      <DependentUpon>frmAnimeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnimeEpisodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimeEpisodes.Designer.cs">
+      <DependentUpon>frmAnimeEpisodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComicChapters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComicChapters.Designer.cs">
+      <DependentUpon>frmComicChapters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComicContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComicContent.Designer.cs">
+      <DependentUpon>frmComicContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComicDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComicDetails.Designer.cs">
+      <DependentUpon>frmComicDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageAnime.Designer.cs">
+      <DependentUpon>frmManageAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageAnimeEpisodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageAnimeEpisodes.Designer.cs">
+      <DependentUpon>frmManageAnimeEpisodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageChapterContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageChapterContent.Designer.cs">
+      <DependentUpon>frmManageChapterContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageComicChapters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageComicChapters.Designer.cs">
+      <DependentUpon>frmManageComicChapters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageComics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageComics.Designer.cs">
+      <DependentUpon>frmManageComics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptMyComics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptMyComics.Designer.cs">
+      <DependentUpon>frmRptMyComics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewerAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewerAnime.Designer.cs">
+      <DependentUpon>frmViewerAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewerComics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewerComics.Designer.cs">
+      <DependentUpon>frmViewerComics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewerDashboard.Designer.cs">
+      <DependentUpon>frmViewerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditAnimeEpisode.resx">
+      <DependentUpon>frmAddEditAnimeEpisode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditChapterContent.resx">
+      <DependentUpon>frmAddEditChapterContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditComic.resx">
+      <DependentUpon>frmAddEditComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditComicChapter.resx">
+      <DependentUpon>frmAddEditComicChapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminDashboard.resx">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnimeDetails.resx">
+      <DependentUpon>frmAnimeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnimeEpisodes.resx">
+      <DependentUpon>frmAnimeEpisodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComicChapters.resx">
+      <DependentUpon>frmComicChapters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComicContent.resx">
+      <DependentUpon>frmComicContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComicDetails.resx">
+      <DependentUpon>frmComicDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageAnime.resx">
+      <DependentUpon>frmManageAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageAnimeEpisodes.resx">
+      <DependentUpon>frmManageAnimeEpisodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageChapterContent.resx">
+      <DependentUpon>frmManageChapterContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageComicChapters.resx">
+      <DependentUpon>frmManageComicChapters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageComics.resx">
+      <DependentUpon>frmManageComics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptMyComics.resx">
+      <DependentUpon>frmRptMyComics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewerAnime.resx">
+      <DependentUpon>frmViewerAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewerComics.resx">
+      <DependentUpon>frmViewerComics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewerDashboard.resx">
+      <DependentUpon>frmViewerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-circle-emoji-512x512-8xv6a7vo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain-grey-background-ydlwqztavi78gl24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-rafiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forgot password-cuate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\423483-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon-illustration-design-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain-grey-background-ydlwqztavi78gl241.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solo-leveling-sung-jin-woo-blue-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defa5b9817265f6c251650be59b13fa9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\349808-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17367.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3114883.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\373cdcd30d127d07be2bdcc002936945.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7580bcd58108f60135aa0942229c2ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\defaultImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
