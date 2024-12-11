@@ -7,7 +7,7 @@
     <ProjectGuid>{8B482195-4004-4AEF-93A1-16D7AC815E0F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Software</RootNamespace>
-    <AssemblyName>Software</AssemblyName>
+    <AssemblyName>AniComic</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AniComic.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Software.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -498,6 +504,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Arrow_Left-512-ezgif.com-webp-to-png-converter.png" />
+    <Content Include="AniComic.ico" />
+    <Content Include="iconForApp.ico" />
+    <Content Include="picture1.ico" />
     <Content Include="Resources\defaultImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
