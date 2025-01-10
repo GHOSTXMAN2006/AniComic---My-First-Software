@@ -192,7 +192,5 @@ namespace Software
             // Show the new form without closing the current one
             manageChapterContentForm.Show();
         }
-
-
     }
 }

@@ -134,10 +134,22 @@ namespace Software
             byte[] imageBytes = null;
             if (picCoverImage.Image != null)
             {
-                using (var ms = new System.IO.MemoryStream())
+                try
                 {
-                    picCoverImage.Image.Save(ms, picCoverImage.Image.RawFormat);
-                    imageBytes = ms.ToArray();
+                    // Create a deep copy of the image to avoid GDI+ errors
+                    using (Bitmap bitmapCopy = new Bitmap(picCoverImage.Image))
+                    {
+                        using (var ms = new System.IO.MemoryStream())
+                        {
+                            bitmapCopy.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // Save as PNG
+                            imageBytes = ms.ToArray();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error saving image: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;  // Prevent further execution if image saving fails
                 }
             }
 
